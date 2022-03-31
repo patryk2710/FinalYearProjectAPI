@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "title": "The transaction schema",
+  "description": "Information on the user due to be credited",
+  "examples": [
+    {
+      "username": "John Smith",
+      "number": "0851234567",
+      "amount": 1.70
+    }
+  ],
+  "required": [
+    "username",
+    "number",
+    "amount"
+  ],
+  "properties": {
+    "username": {
+      "type": "string",
+      "title": "users name",
+      "examples": [
+        "John Smith"
+      ]
+    },
+    "number": {
+      "type": "string",
+      "title": "users phone number",
+      "minLength": 10,
+      "maxLength": 10,
+      "examples": [
+        "John Smith"
+      ]
+    },
+    "amount": {
+      "type": "number",
+      "title": "transaction amount",
+      "examples": [
+        1.7
+      ]
+    }
+  },
+  "additionalProperties": false
+}
